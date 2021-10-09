@@ -37,16 +37,15 @@ and use a for loop for any other size object.
 Also, added two private variables, row and column for ReadPoints2D function utilized stl array for this program. 
 
 ## Run
-To compile on terminal type:
-  make clean
-  make all
+- To compile on terminal type:
+1. make clean
+2. make all
 
-To delete executables and object file type:
-  make clean
+- To delete executables and object file type:
+1. make clean
 
-To run:
-./test_points2d
+- To run:
+1. ./test_points2d
 
-To run with a given file that is redirected to standard input:
-
-./test_points2d < test_input_file.txt
+- To run with a given file that is redirected to standard input:
+1. ./test_points2d < test_input_file.txt
