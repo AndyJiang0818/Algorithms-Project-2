@@ -1,25 +1,19 @@
-# Algorithms-Project-2
+# The Big Five
 
-You will use this exact Makefile for your Homework #2.
-Failure to do so will result in deduction of points.
+## Overview
+Create and test a class called Points2D. This class describes a sequence of 2D points (i.e. points
+in the 2D-plane). For example (1, 3), (4, 5) is a sequence of two points, where each coordinate is
+an integer. (1.2, 3.4), (5.6, 10.1), (11.1, 12.0) is a sequence of three points where each
+coordinate is a double. A sequence can have any size. An empty sequence has size 0.
 
-To compile on terminal type
-  make clean
-  make all
+The private data members should be:
+ size_t size; std::array<Object, 2> *sequence_;
 
-To delete executables and object file type
-  make clean
+Object is the template type parameter (i.e. int, double, etc.). An initial piece of code with the
+structure of the class is provided. Do not change the data representation (for instance do not use a
+vector or list to represent the sequence_).
 
-To run:
-
-./test_points2d
-
-^^In that case you will provide input from standard input.
-
-To run with a given file that is redirected to standard input:
-
-./test_points2d < test_input_file.txt
-
+## Thoughts
 Within the big-five, set the size of the zero-parameter constructor to zero, and the sequence as nullpointer. 
 For the copy-constructor, copy the array and size, return if copy file is a nullpointer, 
 then return Points2D object with copied value. 
@@ -41,3 +35,18 @@ In order to overload the << operator, print out an empty parentheses if the size
 and use a for loop for any other size object. 
 
 Also, added two private variables, row and column for ReadPoints2D function utilized stl array for this program. 
+
+## Run
+To compile on terminal type:
+  make clean
+  make all
+
+To delete executables and object file type:
+  make clean
+
+To run:
+./test_points2d
+
+To run with a given file that is redirected to standard input:
+
+./test_points2d < test_input_file.txt
